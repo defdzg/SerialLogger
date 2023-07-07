@@ -1,0 +1,9 @@
+{
+    "name": "SerialLogger",
+    "version": "1.0.0",
+    "description": "A simple serial logger for Arduino. Modified from Microsoft.",
+    "repository": {
+        "type": "git",
+        "url":  "https://github.com/defdzg/SerialLogger"
+    }
+}
