@@ -19,6 +19,8 @@ public:
   void Info(String message);
   void Error(String message);
   void Success(String message);
+  void Command(String message);
+  void Response(String message);
 };
 
 extern SerialLogger Logger;

@@ -50,4 +50,28 @@ void SerialLogger::Success(String message)
   Serial.println(message);
 }
 
+/**
+ * The function "Command" logs a command message with a prefix indicating it is a command.
+ * 
+ * @param message The "message" parameter is a string that represents the command being logged.
+ */
+void SerialLogger::Command(String message)
+{
+  Serial.print(" [COMMAND] ");
+  Serial.println(message);
+}
+
+/**
+ * The function "Response" in the "SerialLogger" class prints a message with the prefix "[RESPONSE]" to
+ * the USB serial port.
+ * 
+ * @param message The parameter "message" is a string that represents the response message that you
+ * want to log.
+ */
+void SerialLogger::Response(String message)
+{
+  Serial.print(" [RESPONSE] ");
+  Serial.println(message);
+}
+
 SerialLogger Logger;
